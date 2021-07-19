@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/phone"
+    android:hapticFeedbackEnabled="true">
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/button"
+        android:text="@string/next"
+        android:textColor="@color/phone"
+        android:textSize="18sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imFone"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/car"
+        app:layout_constraintBottom_toBottomOf="@+id/imFone"
+        app:layout_constraintEnd_toEndOf="@+id/imFone"
+        app:layout_constraintStart_toStartOf="@+id/imFone"
+        app:layout_constraintTop_toTopOf="@+id/imFone" />
+
+    <TextView
+        android:id="@+id/tvOffer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/textOffer"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNext" />
+
+    <ImageView
+        android:id="@+id/imLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="49dp"
+        android:src="@drawable/line"
+        app:layout_constraintBottom_toTopOf="@+id/btNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/etInputPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/phone"
+        android:drawableStart="@drawable/number"
+        android:drawablePadding="29dp"
+        android:hint="@string/hint"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24dp"
+        app:mask="___ ___-__-__"
+        app:layout_constraintBottom_toTopOf="@+id/imLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLength="13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

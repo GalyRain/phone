@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Phone</string>
+    <string name="next">Продолжить</string>
+    <string name="textOffer">Ознакомьтесь с договором-оферты. Регистрируясь или авторизуясь, вы принимаете его условия</string>
+    <string name="ready">Готово</string>
+    <string name="inputCode">Введите код из СМС</string>
+    <string name="nextCode">Повторно отправить СМС с кодом можно будет через 15 секунд</string>
+    <string name="errorPhone">Телефон введне неверно</string>
+    <string name="errorServer">Ошибка сервера</string>
+    <string name="invalidCredentials">Неверный SMS код</string>
+    <string name="finish">Поздравляем!</string>
+    <string name="errorCode">Код введне неверно</string>
+    <string name="hint"><font size="12"><drawablePadding size="38">Введите номер вашего телефона</drawablePadding></font></string>
+</resources>
